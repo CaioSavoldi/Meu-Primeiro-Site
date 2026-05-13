@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Segundo Programa</title>
+    <style>
+        body {
+            background-color: rgb(98, 167, 194);
+            color: white;
+            font: 20pt Arial;
+            
+                /* centraliza tudo na tela */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                /* espaçamento interno nas bordas */
+            padding: 40px;
+        }
+           
+                /* ===== TÍTULO PRINCIPAL ===== */
+        h1 {
+            font-size: 48px;
+
+            /* linha abaixo do título */
+            border-bottom:2px solid white;
+
+            /* espaçamento abaixo do h1 */
+            padding-bottom: 10px;
+        }
+        
+                /* ===== SUBTÍTULO ===== */
+        h2 {
+            font-size: 28px;
+
+                /* deixa o texto um pouco transparente pra criar hierarquia */
+            opacity: 0.8;
+        }
+
+                /* ===== CAIXA DE DESTAQUE ===== */
+        .caixa {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px 40px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+        
+    <h1>Olá Mundo!</h1>
+    <h2>Me livrei da maldição</h2>
+        <!-- caixa de destaque em volta do conteúdo -->
+    <div class="caixa">
+        <p>Programa de soma de dois números</p>
+    </div>
+    
+    <script>
+    var n1 = Number(window.prompt("digite um número"))
+    var n2 = Number(window.prompt("digite outro número"))
+    var s = n1 + n2
+    window.alert(`a soma entre ${n1} e ${n2} é igual: ${s}`)
+                 
+    </script>     
+</body>
+</html>
